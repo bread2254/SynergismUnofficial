@@ -6023,7 +6023,7 @@ const tick = () => {
     // compute at max delta ms to avoid negative delta
     dtEffective = Math.min(delta, dtEffective)
     // run tack and record timings
-    tack(dtEffective / 1000)
+    tack(dtEffective * 1000)
     lastUpdate += dtEffective
     delta -= dtEffective
   }
